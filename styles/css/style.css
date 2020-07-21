@@ -1,0 +1,310 @@
+html {
+  font-size: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #363636; }
+
+* {
+  outline: none; }
+
+button {
+  border: none; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+.bold {
+  font-weight: 700; }
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+  .nav-menu .logo {
+    border-right: 1px solid #D4D4D4; }
+    .nav-menu .logo img {
+      margin: 3.5rem; }
+  .nav-menu .search {
+    display: flex;
+    margin-left: 3.5rem;
+    margin-right: auto;
+    align-items: center; }
+    .nav-menu .search input {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      border: none;
+      padding-left: 3.5rem;
+      background: url("../../img/search-icon.svg") no-repeat left center;
+      color: #A5A5A5; }
+  .nav-menu .navigation {
+    display: flex;
+    margin-right: 4.4rem;
+    align-items: center; }
+    .nav-menu .navigation ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style-type: none; }
+      .nav-menu .navigation ul li {
+        margin-right: 1.8rem; }
+        .nav-menu .navigation ul li a {
+          text-decoration: none;
+          position: relative;
+          color: #363636;
+          font-size: 1.8rem;
+          line-height: 2.1rem; }
+          .nav-menu .navigation ul li a::after {
+            position: absolute;
+            display: block;
+            left: 0;
+            bottom: -10px;
+            width: 0;
+            height: 2px;
+            background-color: #5671F6;
+            content: "";
+            transition: width 0.3s ease-out; }
+          .nav-menu .navigation ul li a:hover::after {
+            width: 100%; }
+  .nav-menu .buttons {
+    height: 100%;
+    border-left: 1px solid #D4D4D4;
+    font-size: 1.8rem;
+    line-height: 2.1rem; }
+    .nav-menu .buttons .sign-up {
+      padding: 4.1rem 3.4rem;
+      background-color: #ffffff;
+      color: #5671F6; }
+      .nav-menu .buttons .sign-up:hover {
+        cursor: pointer;
+        background-color: #fafafa; }
+    .nav-menu .buttons .log-in {
+      padding: 4.1rem 5rem;
+      background-color: #5671F6;
+      color: #ffffff; }
+      .nav-menu .buttons .log-in:hover {
+        cursor: pointer;
+        background-color: #2648f3; }
+  .nav-menu .burger-menu {
+    display: none; }
+  .nav-menu .mobile-search {
+    display: none; }
+
+.film-description {
+  margin: 8rem 0; }
+  .film-description .container {
+    display: flex;
+    flex-direction: row; }
+    .film-description .container .poster {
+      margin-right: 6rem;
+      box-sizing: border-box;
+      border: 1px solid #D4D4D4;
+      border-radius: 6px; }
+      .film-description .container .poster .play {
+        padding: 2.5rem 0; }
+        .film-description .container .poster .play a {
+          line-height: 2.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.6rem;
+          text-decoration: none;
+          color: #5671F6; }
+          .film-description .container .poster .play a img {
+            margin-right: 1.4rem; }
+    .film-description .container .description {
+      width: 50%; }
+      .film-description .container .description h1 {
+        margin-top: 0;
+        font-size: 3.6rem;
+        font-weight: 900;
+        line-height: 4.2rem; }
+      .film-description .container .description .original-name {
+        color: #A5A5A5;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        margin-bottom: 3.2rem; }
+      .film-description .container .description .preview {
+        font-size: 1.4rem;
+        line-height: 150%;
+        color: #000000; }
+      .film-description .container .description .statistics {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5rem; }
+        .film-description .container .description .statistics ul {
+          list-style: none;
+          font-size: 1.6rem;
+          line-height: 1.9rem;
+          padding: 0;
+          margin: 0; }
+          .film-description .container .description .statistics ul li {
+            margin-bottom: 1.6rem; }
+      .film-description .container .description .rating {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        height: 10rem; }
+        .film-description .container .description .rating .persents {
+          color: #5671F6;
+          border: 1px solid #5671F6;
+          border-radius: 10px;
+          font-size: 2.8rem;
+          line-height: 3.3rem;
+          padding: 3.3rem 2.3rem; }
+        .film-description .container .description .rating .viewers-rate {
+          margin-left: 2.8rem; }
+          .film-description .container .description .rating .viewers-rate p {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            margin: 0.7rem 0; }
+            .film-description .container .description .rating .viewers-rate p.bold {
+              font-size: 1.8rem;
+              line-height: 2.1rem;
+              margin: 1.2rem 0; }
+
+.stuff {
+  border-top: 1px solid #D4D4D4;
+  margin-bottom: 7rem; }
+  .stuff ul {
+    margin-top: 7rem;
+    margin-bottom: 6rem;
+    list-style: none;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0; }
+    .stuff ul li {
+      margin-right: 3rem; }
+      .stuff ul li.inactive {
+        color: #A5A5A5;
+        font-weight: normal; }
+  .stuff .actors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 3.5rem; }
+    .stuff .actors a {
+      text-decoration: none; }
+      .stuff .actors a .actor-card {
+        display: flex;
+        flex-direction: row; }
+        .stuff .actors a .actor-card .name {
+          margin-left: 2rem;
+          font-size: 1.6rem;
+          line-height: 1.9rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .stuff .actors a .actor-card .name p {
+            margin: 6px 0; }
+          .stuff .actors a .actor-card .name .name-rus {
+            color: #5671F6;
+            font-weight: bold; }
+          .stuff .actors a .actor-card .name .name-eng {
+            color: #A5A5A5; }
+
+.news {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  background-color: #F3F3F3; }
+  .news h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem; }
+  .news .news-cards {
+    margin-top: 6.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem; }
+    .news .news-cards .news-card {
+      padding: 3rem;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      color: #363636;
+      background-color: #ffffff; }
+      .news .news-cards .news-card h6 {
+        font-weight: 400; }
+      .news .news-cards .news-card p {
+        font-weight: 700; }
+
+@media screen and (max-width: 576px) {
+  .nav-menu {
+    max-width: 100%;
+    border-bottom: 1px solid #D4D4D4; }
+    .nav-menu .logo {
+      border: none; }
+      .nav-menu .logo img {
+        margin: 1.5rem 2.8rem; }
+    .nav-menu .search input {
+      display: none; }
+    .nav-menu .navigation {
+      display: none; }
+    .nav-menu .buttons {
+      display: none; }
+    .nav-menu .burger-menu {
+      display: block;
+      padding: 1.5rem 2.6rem;
+      background-color: #ffffff; }
+    .nav-menu .mobile-search {
+      display: block;
+      padding: auto 2.6rem;
+      background-color: #ffffff; }
+
+  .container {
+    width: 90%; }
+
+  .film-description {
+    margin-top: 3rem;
+    margin-bottom: 7rem; }
+    .film-description .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .film-description .container .poster {
+        margin: 0 auto;
+        width: 100%; }
+        .film-description .container .poster .poster-img {
+          width: 100%; }
+      .film-description .container .description {
+        width: 100%; }
+        .film-description .container .description h1 {
+          font-size: 2rem;
+          line-height: 2.3rem;
+          margin-top: 3rem; }
+        .film-description .container .description .original-name {
+          margin-top: 1.2rem;
+          font-size: 1.4rem;
+          line-height: 1.6rem; }
+        .film-description .container .description .statistics {
+          display: grid;
+          grid-template-columns: 1fr 1fr; }
+        .film-description .container .description .rating {
+          margin-top: 4rem; }
+
+  .stuff ul {
+    font-size: 1.8rem;
+    line-height: 2.1rem; }
+    .stuff ul li {
+      margin-right: 2rem; }
+  .stuff .actors {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 2rem; }
+
+  .news {
+    padding-top: 5rem;
+    padding-bottom: 7rem; }
+    .news h2 {
+      font-size: 2rem;
+      line-height: 2.4rem; }
+    .news .news-cards {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 3rem;
+      grid-column-gap: 0; } }
+
+/*# sourceMappingURL=style.css.map */
